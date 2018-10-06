@@ -1,0 +1,3 @@
+I will be solving the linear advection equation numerically.
+I have no previous experience of coding numerical solutions to PDEs.
+
