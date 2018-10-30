@@ -1,0 +1,40 @@
+Great start.
+
+Good use of git
+
+I downloaded Jupyter notebooks so that I could convert your files to python
+
+As seems to be encouraged when using notebooks, your code seems to be a stream of consciousness rather than well planned code. I would strongly recommend starting from my code at
+https://github.com/hilaryweller0/linearAdvectionTeaching
+It is much better structured and hopefully easy to understand.
+
+I would strongly recommend NOT using notebooks but if you do then do not include notebook files (*.ipynb) to a git repository. You should only include ascii files in a git repository so include python files.
+
+Do not store results from every time step. For a forward in time scheme you only need store 2 time levels at a time and for a centred in time scheme you will need 3. For an example of how to do this see my code at
+https://github.com/hilaryweller0/linearAdvectionTeaching
+
+You have a lot of code duplication. Use functions to remove code duplication. Not using notebook will help with this.
+
+Your choice of initial conditions is not helpful for highlightling the advantages and disadvantages of different schemes. Try the initial conditions in my code.
+
+You need comments describing what boundary conditions you are using. I would recommend using periodic boundary conditions.
+
+There should be comments describing what equation you are solving and with what numerical methods.
+
+It would be useful to compare different numerical methods on the same plot with legends.
+
+Your code should have lines to save plots as a graphics format so that you can include them in a report.
+
+All functions should have doc strings. 
+
+Re-read the good programming practices at:
+https://www.dropbox.com/s/yba7pj7woyvv7hs/goodCode.pdf
+and follow them. Put questions on the Slack discussion site if necessary.
+
+Delete and remove files from the repository that you will not use to create the results for your report. Don't worry, you will be able to get them back again - that is the point of using version control software like git.
+
+You should not store the results from every time step. If you are using a two time level scheme you only need ever store two time levels at a time.
+
+You should re-write your code so that it is clearer how to change the resolution or other aspects of the setup.
+
+Indent comments with the code so that the reader can easily see where functions and other blocks of code begin and end.
